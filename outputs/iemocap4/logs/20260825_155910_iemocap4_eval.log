@@ -1,0 +1,25 @@
+Log file: /storage/24721521_lzw/lzw/0825_开源版本/MOCAR/outputs/iemocap4/logs/20260825_155910_iemocap4_eval.log
+Namespace(Dataset='IEMOCAP4', base_margin=0.0, batch_size=16, car_audio_weight=1.0, car_fused_weight=1.5, car_lambda=0.04, car_text_weight=0.5, car_video_weight=0.5, checkpoint='outputs/iemocap4/checkpoints/iemocap4_seed61078_best.pt', class_weight=True, conf_beta=0.85, conf_log_interval=0, conf_min_score=0.0, conf_temp=1.0, conf_warmup=5, data_path='/storage/24721521_lzw/lzw/graphsmile/dataset/iemocap_multi_features_4.pkl', dropout=0.6, early_stop_patience=20, epochs=200, eval_only=True, gpu=0, hidden_dim=512, l2=1.7468952853162445e-06, log_dir='outputs/iemocap4/logs', lr=0.00020566274895060898, margin_scale=0.0, n_head=8, no_cuda=False, no_save_checkpoint=False, order=3, pair_margin_lambda=0.03, rank=16, run_name='iemocap4_seed61078', save_best_dir='outputs/iemocap4/checkpoints', seed=61078, temp=2, tensorboard=False, topk_conf_pairs=5, use_mocar=True)
+Running on GPU cuda:0
+temp 2
+total parameters: 12671506
+training parameters: 12671506
+MOCAR enabled: modality-wise online confusion matrices + CAR + hard-pair margin
+Checkpoint test performance..
+Acc: 87.17
+F-Score: 87.19
+              precision    recall  f1-score   support
+
+           0     0.8000    0.8611    0.8294     144.0
+           1     0.8750    0.8857    0.8803     245.0
+           2     0.9053    0.8464    0.8748     384.0
+           3     0.8619    0.9176    0.8889     170.0
+
+    accuracy                         0.8717     943.0
+   macro avg     0.8605    0.8777    0.8684     943.0
+weighted avg     0.8735    0.8717    0.8719     943.0
+
+[[124.   4.  15.   1.]
+ [ 11. 217.  10.   7.]
+ [ 20.  22. 325.  17.]
+ [  0.   5.   9. 156.]]

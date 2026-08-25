@@ -1,0 +1,17 @@
+Log file: /storage/24721521_lzw/lzw/0825_开源版本/MOCAR/outputs/sims2/logs/20260825_155750_sims2_train.log
+seed=1111 epoch=1 train_loss=0.8799 valid_loss=0.7978 valid=[accuracy: 0.7543, weighted_f1: 0.7530, macro_f1: 0.7387]
+seed=1111 epoch=2 train_loss=0.7211 valid_loss=0.7051 valid=[accuracy: 0.7867, weighted_f1: 0.7890, macro_f1: 0.7814]
+seed=1111 epoch=3 train_loss=0.5737 valid_loss=0.6704 valid=[accuracy: 0.7913, weighted_f1: 0.7929, macro_f1: 0.7839]
+seed=1111 epoch=4 train_loss=0.4932 valid_loss=0.6220 valid=[accuracy: 0.8161, weighted_f1: 0.8161, macro_f1: 0.8065]
+seed=1111 epoch=5 train_loss=0.4514 valid_loss=0.6749 valid=[accuracy: 0.8083, weighted_f1: 0.8085, macro_f1: 0.7985]
+seed=1111 epoch=6 train_loss=0.4304 valid_loss=0.6208 valid=[accuracy: 0.8253, weighted_f1: 0.8253, macro_f1: 0.8160]
+seed=1111 epoch=7 train_loss=0.4123 valid_loss=0.6783 valid=[accuracy: 0.8099, weighted_f1: 0.8101, macro_f1: 0.8003]
+seed=1111 epoch=8 train_loss=0.3878 valid_loss=0.7399 valid=[accuracy: 0.7852, weighted_f1: 0.7870, macro_f1: 0.7783]
+seed=1111 epoch=9 train_loss=0.3695 valid_loss=0.7299 valid=[accuracy: 0.7960, weighted_f1: 0.7970, macro_f1: 0.7875]
+seed=1111 epoch=10 train_loss=0.3570 valid_loss=0.7031 valid=[accuracy: 0.8083, weighted_f1: 0.8082, macro_f1: 0.7979]
+seed=1111 epoch=11 train_loss=0.3487 valid_loss=0.7165 valid=[accuracy: 0.8114, weighted_f1: 0.8105, macro_f1: 0.7996]
+seed=1111 epoch=12 train_loss=0.3441 valid_loss=0.7567 valid=[accuracy: 0.8068, weighted_f1: 0.8073, macro_f1: 0.7976]
+seed=1111 epoch=13 train_loss=0.3315 valid_loss=0.7148 valid=[accuracy: 0.8192, weighted_f1: 0.8177, macro_f1: 0.8067]
+seed=1111 epoch=14 train_loss=0.3392 valid_loss=0.7701 valid=[accuracy: 0.7836, weighted_f1: 0.7855, macro_f1: 0.7768]
+seed=1111 best_epoch=6 test_loss=0.5456 TEST [accuracy: 0.8404, weighted_f1: 0.8404, macro_f1: 0.8366]
+saved_checkpoint=outputs/sims2/checkpoints/mocar_sims2_best.pt

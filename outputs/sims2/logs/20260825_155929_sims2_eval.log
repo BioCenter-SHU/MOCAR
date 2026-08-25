@@ -1,0 +1,2 @@
+Log file: /storage/24721521_lzw/lzw/0825_开源版本/MOCAR/outputs/sims2/logs/20260825_155929_sims2_eval.log
+checkpoint=outputs/sims2/checkpoints/mocar_sims2_best.pt test_loss=0.5456 TEST [accuracy: 0.8404, weighted_f1: 0.8404, macro_f1: 0.8366]

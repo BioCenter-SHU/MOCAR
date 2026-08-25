@@ -1,0 +1,13 @@
+{
+  "dataset": "SIMS2_BINARY",
+  "runs": [
+    {
+      "seed": 1111,
+      "checkpoint": "outputs/sims2/checkpoints/mocar_sims2_best.pt",
+      "test_loss": 0.5455717970343197,
+      "accuracy": 0.8404255319148937,
+      "weighted_f1": 0.8404498378331554,
+      "macro_f1": 0.8365608909112681
+    }
+  ]
+}

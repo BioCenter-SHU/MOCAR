@@ -1,0 +1,31 @@
+Log file: /storage/24721521_lzw/lzw/0825_开源版本/MOCAR/outputs/cmumosei7/logs/20260825_155925_cmumosei7_eval.log
+Namespace(Dataset='CMUMOSEI7', base_margin=0.05, batch_size=16, car_audio_weight=1.0, car_fused_weight=1.0, car_lambda=0.003, car_text_weight=1.0, car_video_weight=1.0, checkpoint='outputs/cmumosei7/checkpoints/cmumosei7_seed61078_best.pt', class_weight=True, conf_beta=0.9, conf_log_interval=0, conf_min_score=0.0, conf_temp=1.5, conf_warmup=0, data_path='/storage/24721521_lzw/lzw/0609/css_ablate_pgm_spfusion_mocar/data/cmumosei_multi_regression_features.pkl', dropout=0.6, early_stop_patience=20, epochs=200, eval_only=True, gpu=0, hidden_dim=512, l2=3.4373060824067456e-06, log_dir='outputs/cmumosei7/logs', lr=0.0001825742984741367, margin_scale=0.05, n_head=8, no_cuda=False, no_save_checkpoint=False, order=3, pair_margin_lambda=0.1, rank=16, run_name='cmumosei7_seed61078', save_best_dir='outputs/cmumosei7/checkpoints', seed=61078, temp=3, tensorboard=False, topk_conf_pairs=3, use_mocar=True)
+Running on GPU cuda:0
+temp 3
+total parameters: 12578846
+training parameters: 12578846
+MOCAR enabled: modality-wise online confusion matrices + CAR + hard-pair margin
+Checkpoint test performance..
+Acc: 47.16
+F-Score: 45.66
+              precision    recall  f1-score   support
+
+           0     0.2667    0.1818    0.2162      22.0
+           1     0.3956    0.2264    0.2880     159.0
+           2     0.4505    0.4003    0.4239     602.0
+           3     0.4618    0.3279    0.3835     921.0
+           4     0.5043    0.6693    0.5752    1666.0
+           5     0.4082    0.3757    0.3913     692.0
+           6     0.3659    0.1230    0.1840     122.0
+
+    accuracy                         0.4716    4184.0
+   macro avg     0.4075    0.3292    0.3517    4184.0
+weighted avg     0.4619    0.4716    0.4566    4184.0
+
+[[4.000e+00 7.000e+00 5.000e+00 1.000e+00 3.000e+00 2.000e+00 0.000e+00]
+ [4.000e+00 3.600e+01 7.700e+01 9.000e+00 2.500e+01 8.000e+00 0.000e+00]
+ [2.000e+00 2.800e+01 2.410e+02 1.220e+02 1.880e+02 2.100e+01 0.000e+00]
+ [4.000e+00 1.000e+01 1.020e+02 3.020e+02 4.680e+02 3.500e+01 0.000e+00]
+ [1.000e+00 8.000e+00 9.000e+01 2.060e+02 1.115e+03 2.420e+02 4.000e+00]
+ [0.000e+00 2.000e+00 1.800e+01 1.400e+01 3.760e+02 2.600e+02 2.200e+01]
+ [0.000e+00 0.000e+00 2.000e+00 0.000e+00 3.600e+01 6.900e+01 1.500e+01]]

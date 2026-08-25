@@ -1,0 +1,197 @@
+Log file: /storage/24721521_lzw/lzw/0825_开源版本/MOCAR/outputs/meld/logs/20260825_154144_meld_train.log
+Namespace(Dataset='MELD', base_margin=0.0, batch_size=16, car_audio_weight=0.8, car_fused_weight=1.5, car_lambda=0.015, car_text_weight=1.2, car_video_weight=0.6, checkpoint=None, class_weight=True, conf_beta=0.7, conf_log_interval=0, conf_min_score=0.0, conf_temp=1.0, conf_warmup=3, data_path='/storage/24721521_lzw/lzw/0609/css_ablate_pgm_spfusion_mocar/data/meld_multimodal_features.pkl', dropout=0.55, early_stop_patience=20, epochs=100, eval_only=False, gpu=0, hidden_dim=1024, l2=1.6749607640937186e-05, log_dir='outputs/meld/logs', lr=6.060121798709486e-06, margin_scale=0.5, n_head=8, no_cuda=False, no_save_checkpoint=False, order=4, pair_margin_lambda=0.02, rank=16, run_name='meld_seed10068', save_best_dir='outputs/meld/checkpoints', seed=10068, temp=1, tensorboard=False, topk_conf_pairs=5, use_mocar=True)
+Running on GPU cuda:0
+temp 1
+total parameters: 53184542
+training parameters: 53184542
+MOCAR enabled: modality-wise online confusion matrices + CAR + hard-pair margin
+/storage/24721521_lzw/lzw/0825_开源版本/MOCAR/src/dataloader.py:93: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:245.)
+  return torch.FloatTensor(self.videoText[vid]),\
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 1, train_loss: 2.2328, train_acc: 45.23, train_fscore: 30.06, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.9483, test_acc: 48.12, test_fscore: 31.27, time: 6.43 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 2, train_loss: 1.9809, train_acc: 48.77, train_fscore: 34.21, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.8183, test_acc: 51.95, test_fscore: 38.92, time: 9.22 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 3, train_loss: 1.8503, train_acc: 56.61, train_fscore: 47.62, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.7125, test_acc: 60.77, test_fscore: 53.04, time: 9.28 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 4, train_loss: 1.8137, train_acc: 64.19, train_fscore: 57.95, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.5747, test_acc: 64.41, test_fscore: 58.56, time: 11.0 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 5, train_loss: 1.6748, train_acc: 67.44, train_fscore: 62.27, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.5165, test_acc: 65.82, test_fscore: 61.07, time: 10.46 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 6, train_loss: 1.5773, train_acc: 69.53, train_fscore: 65.29, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.488, test_acc: 66.28, test_fscore: 62.34, time: 10.5 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 7, train_loss: 1.4995, train_acc: 70.29, train_fscore: 66.61, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4724, test_acc: 65.82, test_fscore: 62.46, time: 10.69 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 8, train_loss: 1.444, train_acc: 71.17, train_fscore: 67.95, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4615, test_acc: 66.02, test_fscore: 63.09, time: 10.51 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 9, train_loss: 1.401, train_acc: 71.46, train_fscore: 68.47, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4566, test_acc: 66.05, test_fscore: 63.24, time: 10.83 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 10, train_loss: 1.3667, train_acc: 71.75, train_fscore: 68.91, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4612, test_acc: 66.21, test_fscore: 63.53, time: 10.44 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 11, train_loss: 1.3438, train_acc: 71.99, train_fscore: 69.26, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.469, test_acc: 66.28, test_fscore: 63.65, time: 10.62 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 12, train_loss: 1.3252, train_acc: 71.81, train_fscore: 69.13, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4657, test_acc: 66.13, test_fscore: 63.66, time: 10.66 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 13, train_loss: 1.309, train_acc: 72.27, train_fscore: 69.74, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4621, test_acc: 66.09, test_fscore: 63.67, time: 10.07 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 14, train_loss: 1.2978, train_acc: 72.31, train_fscore: 69.79, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4654, test_acc: 66.44, test_fscore: 64.1, time: 10.5 sec
+epoch: 15, train_loss: 1.2879, train_acc: 72.42, train_fscore: 69.98, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4617, test_acc: 66.36, test_fscore: 64.09, time: 6.99 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 16, train_loss: 1.2788, train_acc: 72.52, train_fscore: 70.15, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4498, test_acc: 66.51, test_fscore: 64.43, time: 10.36 sec
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/storage/24721521_lzw/.conda/envs/mocar/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+epoch: 17, train_loss: 1.2685, train_acc: 72.49, train_fscore: 70.12, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4529, test_acc: 66.78, test_fscore: 64.91, time: 10.46 sec
+epoch: 18, train_loss: 1.2596, train_acc: 72.84, train_fscore: 70.63, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4498, test_acc: 66.67, test_fscore: 64.67, time: 7.04 sec
+epoch: 19, train_loss: 1.2524, train_acc: 72.6, train_fscore: 70.47, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4517, test_acc: 66.78, test_fscore: 64.8, time: 6.94 sec
+epoch: 20, train_loss: 1.2437, train_acc: 72.84, train_fscore: 70.76, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4424, test_acc: 66.74, test_fscore: 64.82, time: 6.93 sec
+epoch: 21, train_loss: 1.2397, train_acc: 72.86, train_fscore: 70.86, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4382, test_acc: 66.86, test_fscore: 65.17, time: 10.36 sec
+epoch: 22, train_loss: 1.2305, train_acc: 72.89, train_fscore: 71.03, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4369, test_acc: 66.82, test_fscore: 65.38, time: 10.64 sec
+epoch: 23, train_loss: 1.2288, train_acc: 73.11, train_fscore: 71.34, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4365, test_acc: 67.01, test_fscore: 65.35, time: 6.92 sec
+epoch: 24, train_loss: 1.2236, train_acc: 73.29, train_fscore: 71.65, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4369, test_acc: 66.82, test_fscore: 65.2, time: 6.96 sec
+epoch: 25, train_loss: 1.2151, train_acc: 73.34, train_fscore: 71.63, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4312, test_acc: 66.7, test_fscore: 65.2, time: 6.92 sec
+epoch: 26, train_loss: 1.212, train_acc: 73.4, train_fscore: 71.8, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4321, test_acc: 66.74, test_fscore: 65.22, time: 6.91 sec
+epoch: 27, train_loss: 1.2057, train_acc: 73.42, train_fscore: 71.83, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4339, test_acc: 66.63, test_fscore: 65.19, time: 6.97 sec
+epoch: 28, train_loss: 1.2068, train_acc: 73.79, train_fscore: 72.35, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4327, test_acc: 66.78, test_fscore: 65.36, time: 7.03 sec
+epoch: 29, train_loss: 1.2015, train_acc: 73.76, train_fscore: 72.39, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.432, test_acc: 66.82, test_fscore: 65.45, time: 10.36 sec
+epoch: 30, train_loss: 1.2014, train_acc: 73.81, train_fscore: 72.43, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4346, test_acc: 67.13, test_fscore: 65.63, time: 10.55 sec
+epoch: 31, train_loss: 1.1939, train_acc: 73.83, train_fscore: 72.42, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4323, test_acc: 66.86, test_fscore: 65.39, time: 7.06 sec
+epoch: 32, train_loss: 1.1919, train_acc: 73.83, train_fscore: 72.53, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4239, test_acc: 67.13, test_fscore: 65.97, time: 10.63 sec
+epoch: 33, train_loss: 1.1888, train_acc: 73.69, train_fscore: 72.43, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4249, test_acc: 66.82, test_fscore: 65.59, time: 7.12 sec
+epoch: 34, train_loss: 1.1859, train_acc: 74.1, train_fscore: 72.91, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.421, test_acc: 67.43, test_fscore: 66.14, time: 10.46 sec
+epoch: 35, train_loss: 1.1815, train_acc: 74.11, train_fscore: 72.92, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4244, test_acc: 67.47, test_fscore: 66.35, time: 10.7 sec
+epoch: 36, train_loss: 1.178, train_acc: 74.14, train_fscore: 72.94, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4169, test_acc: 66.51, test_fscore: 65.52, time: 6.98 sec
+epoch: 37, train_loss: 1.1723, train_acc: 74.23, train_fscore: 73.1, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4184, test_acc: 67.39, test_fscore: 66.3, time: 7.02 sec
+epoch: 38, train_loss: 1.1712, train_acc: 74.16, train_fscore: 73.05, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4181, test_acc: 67.36, test_fscore: 66.31, time: 7.02 sec
+epoch: 39, train_loss: 1.1706, train_acc: 74.09, train_fscore: 73.0, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4151, test_acc: 67.32, test_fscore: 66.26, time: 7.31 sec
+epoch: 40, train_loss: 1.1682, train_acc: 74.09, train_fscore: 73.02, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4132, test_acc: 67.13, test_fscore: 66.14, time: 7.33 sec
+epoch: 41, train_loss: 1.1671, train_acc: 74.09, train_fscore: 73.02, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.412, test_acc: 67.28, test_fscore: 66.31, time: 7.28 sec
+epoch: 42, train_loss: 1.1597, train_acc: 74.19, train_fscore: 73.15, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.412, test_acc: 67.74, test_fscore: 66.62, time: 10.89 sec
+epoch: 43, train_loss: 1.1566, train_acc: 74.19, train_fscore: 73.17, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4135, test_acc: 67.47, test_fscore: 66.47, time: 6.98 sec
+epoch: 44, train_loss: 1.1592, train_acc: 74.47, train_fscore: 73.48, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4143, test_acc: 66.86, test_fscore: 65.83, time: 6.88 sec
+epoch: 45, train_loss: 1.1533, train_acc: 74.4, train_fscore: 73.38, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4165, test_acc: 67.16, test_fscore: 66.14, time: 6.98 sec
+epoch: 46, train_loss: 1.1505, train_acc: 74.7, train_fscore: 73.73, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4107, test_acc: 67.55, test_fscore: 66.56, time: 6.88 sec
+epoch: 47, train_loss: 1.1504, train_acc: 74.46, train_fscore: 73.51, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4173, test_acc: 67.78, test_fscore: 66.65, time: 10.49 sec
+epoch: 48, train_loss: 1.1481, train_acc: 74.47, train_fscore: 73.5, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4101, test_acc: 68.16, test_fscore: 67.12, time: 10.48 sec
+epoch: 49, train_loss: 1.1458, train_acc: 74.66, train_fscore: 73.76, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4116, test_acc: 67.32, test_fscore: 66.31, time: 7.04 sec
+epoch: 50, train_loss: 1.1416, train_acc: 74.55, train_fscore: 73.6, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4091, test_acc: 67.16, test_fscore: 66.29, time: 6.85 sec
+epoch: 51, train_loss: 1.144, train_acc: 74.54, train_fscore: 73.63, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4113, test_acc: 67.36, test_fscore: 66.45, time: 6.89 sec
+epoch: 52, train_loss: 1.141, train_acc: 74.69, train_fscore: 73.84, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4092, test_acc: 67.28, test_fscore: 66.39, time: 6.9 sec
+epoch: 53, train_loss: 1.138, train_acc: 74.62, train_fscore: 73.72, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4057, test_acc: 66.97, test_fscore: 66.11, time: 6.93 sec
+epoch: 54, train_loss: 1.1358, train_acc: 74.65, train_fscore: 73.79, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.412, test_acc: 67.7, test_fscore: 66.72, time: 7.0 sec
+epoch: 55, train_loss: 1.1348, train_acc: 74.63, train_fscore: 73.75, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4097, test_acc: 67.66, test_fscore: 66.62, time: 7.05 sec
+epoch: 56, train_loss: 1.1321, train_acc: 74.54, train_fscore: 73.68, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4042, test_acc: 66.97, test_fscore: 66.14, time: 6.91 sec
+epoch: 57, train_loss: 1.1309, train_acc: 74.69, train_fscore: 73.88, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.412, test_acc: 67.55, test_fscore: 66.43, time: 6.94 sec
+epoch: 58, train_loss: 1.1276, train_acc: 74.81, train_fscore: 73.94, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4039, test_acc: 67.09, test_fscore: 66.28, time: 6.86 sec
+epoch: 59, train_loss: 1.1289, train_acc: 74.76, train_fscore: 73.95, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4071, test_acc: 67.05, test_fscore: 66.25, time: 6.96 sec
+epoch: 60, train_loss: 1.1206, train_acc: 74.84, train_fscore: 73.99, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4115, test_acc: 67.13, test_fscore: 66.34, time: 7.0 sec
+epoch: 61, train_loss: 1.1222, train_acc: 74.85, train_fscore: 74.07, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.415, test_acc: 67.32, test_fscore: 66.43, time: 7.05 sec
+epoch: 62, train_loss: 1.1193, train_acc: 75.1, train_fscore: 74.29, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4091, test_acc: 66.82, test_fscore: 66.17, time: 6.92 sec
+epoch: 63, train_loss: 1.1194, train_acc: 74.82, train_fscore: 74.03, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4141, test_acc: 67.24, test_fscore: 66.5, time: 6.8 sec
+epoch: 64, train_loss: 1.1211, train_acc: 75.03, train_fscore: 74.28, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4234, test_acc: 67.39, test_fscore: 66.24, time: 6.95 sec
+epoch: 65, train_loss: 1.1148, train_acc: 74.94, train_fscore: 74.12, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4098, test_acc: 67.09, test_fscore: 66.34, time: 6.9 sec
+epoch: 66, train_loss: 1.1162, train_acc: 74.93, train_fscore: 74.16, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4121, test_acc: 67.28, test_fscore: 66.4, time: 7.01 sec
+epoch: 67, train_loss: 1.111, train_acc: 75.09, train_fscore: 74.34, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.412, test_acc: 67.24, test_fscore: 66.37, time: 6.86 sec
+epoch: 68, train_loss: 1.1137, train_acc: 74.9, train_fscore: 74.17, valid_loss: nan, valid_acc: nan, valid_fscore: nan, test_loss: 1.4138, test_acc: 67.32, test_fscore: 66.44, time: 6.87 sec
+Test performance..
+F-Score: 67.12
+F-Score-index: 48
+              precision    recall  f1-score   support
+
+           0     0.7750    0.8447    0.8084    1256.0
+           1     0.5788    0.6014    0.5899     281.0
+           2     0.3043    0.1400    0.1918      50.0
+           3     0.5906    0.3606    0.4478     208.0
+           4     0.6508    0.6443    0.6475     402.0
+           5     0.4211    0.2353    0.3019      68.0
+           6     0.5289    0.5565    0.5424     345.0
+
+    accuracy                         0.6816    2610.0
+   macro avg     0.5499    0.4833    0.5042    2610.0
+weighted avg     0.6693    0.6816    0.6712    2610.0
+
+[[1.061e+03 3.700e+01 6.000e+00 2.500e+01 6.900e+01 4.000e+00 5.400e+01]
+ [4.000e+01 1.690e+02 1.000e+00 4.000e+00 2.800e+01 3.000e+00 3.600e+01]
+ [2.000e+01 4.000e+00 7.000e+00 7.000e+00 3.000e+00 1.000e+00 8.000e+00]
+ [7.300e+01 1.300e+01 3.000e+00 7.500e+01 1.000e+01 3.000e+00 3.100e+01]
+ [8.600e+01 2.700e+01 1.000e+00 5.000e+00 2.590e+02 3.000e+00 2.100e+01]
+ [2.100e+01 4.000e+00 1.000e+00 4.000e+00 1.000e+00 1.600e+01 2.100e+01]
+ [6.800e+01 3.800e+01 4.000e+00 7.000e+00 2.800e+01 8.000e+00 1.920e+02]]

@@ -1,0 +1,31 @@
+Log file: /storage/24721521_lzw/lzw/0825_开源版本/MOCAR/outputs/iemocap6/logs/20260825_155913_iemocap6_eval.log
+Namespace(Dataset='IEMOCAP', base_margin=0.0, batch_size=16, car_audio_weight=1.0, car_fused_weight=1.5, car_lambda=0.075, car_text_weight=0.5, car_video_weight=0.5, checkpoint='outputs/iemocap6/checkpoints/iemocap_seed61078_best.pt', class_weight=True, conf_beta=0.85, conf_log_interval=0, conf_min_score=0.0, conf_temp=1.5, conf_warmup=5, data_path='/storage/24721521_lzw/lzw/0609/css_ablate_pgm_spfusion_mocar/data/iemocap_multimodal_features.pkl', dropout=0.55, early_stop_patience=20, epochs=200, eval_only=True, gpu=0, hidden_dim=1024, l2=6.662349508864241e-06, log_dir='outputs/iemocap6/logs', lr=9.262399152486561e-05, margin_scale=0.0, n_head=8, no_cuda=False, no_save_checkpoint=False, order=3, pair_margin_lambda=0.03, rank=16, run_name='iemocap_seed61078', save_best_dir='outputs/iemocap6/checkpoints', seed=61078, temp=2, tensorboard=False, topk_conf_pairs=5, use_mocar=True)
+Running on GPU cuda:0
+temp 2
+total parameters: 50287642
+training parameters: 50287642
+MOCAR enabled: modality-wise online confusion matrices + CAR + hard-pair margin
+/storage/24721521_lzw/lzw/0825_开源版本/MOCAR/src/dataloader.py:29: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:245.)
+  return torch.FloatTensor(self.videoText[vid]),\
+Checkpoint test performance..
+Acc: 75.66
+F-Score: 75.62
+              precision    recall  f1-score   support
+
+           0     0.6449    0.6181    0.6312     144.0
+           1     0.8272    0.8204    0.8238     245.0
+           2     0.7550    0.7865    0.7704     384.0
+           3     0.6977    0.7059    0.7018     170.0
+           4     0.8333    0.8361    0.8347     299.0
+           5     0.7189    0.6982    0.7084     381.0
+
+    accuracy                         0.7566    1623.0
+   macro avg     0.7462    0.7442    0.7450    1623.0
+weighted avg     0.7561    0.7566    0.7562    1623.0
+
+[[ 89.   6.  13.   0.  35.   1.]
+ [  2. 201.  17.   3.   0.  22.]
+ [ 11.  22. 302.   7.   7.  35.]
+ [  0.   1.   4. 120.   0.  45.]
+ [ 34.   1.  13.   0. 250.   1.]
+ [  2.  12.  51.  42.   8. 266.]]
