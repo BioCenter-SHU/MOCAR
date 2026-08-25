@@ -70,7 +70,32 @@ The dependency set includes:
 
 ## 💾 Data Preparation
 
-The original datasets and pre-extracted features are not redistributed in this repository. Obtain each dataset under its license and prepare a pickle file compatible with the corresponding dataset class in `src/dataloader.py`.
+The original datasets and pre-extracted features are not redistributed in this repository. For reproducing the reported results, use the pre-extracted feature packages listed below. The original-dataset links are provided separately for licensing, citation, and users who wish to extract their own features.
+
+### Pre-extracted Features Used by MOCAR
+
+| Task | Download | Required local filename | Compatibility notes |
+|---|---|---|---|
+| IEMOCAP-4 | [Google Drive](https://drive.google.com/drive/folders/1l_ex1wnAAMpEtO71rjjM1MKC7W_olEVi?usp=drive_link) or [Baidu Netdisk](https://pan.baidu.com/s/1u1efdbBV3HP8FLj3Gy1bvQ) (code: `ipnv`) | `iemocap_multi_features_4.pkl` | GraphSmile-format feature file used by the current loader. |
+| IEMOCAP-6 | [Google Drive](https://drive.google.com/drive/folders/1TwT9z6N6SJadsVkDhSNVBiF9ZygEyA6l) | `iemocap_multimodal_features.pkl` | The downloaded feature file matches the current MOCAR loader. |
+| MELD | [Google Drive](https://drive.google.com/drive/folders/1TwT9z6N6SJadsVkDhSNVBiF9ZygEyA6l) | `meld_multimodal_features.pkl` | The downloaded feature file matches the current MOCAR loader. |
+| CMU-MOSEI7 | [Google Drive](https://drive.google.com/drive/folders/1l_ex1wnAAMpEtO71rjjM1MKC7W_olEVi?usp=drive_link) or [Baidu Netdisk](https://pan.baidu.com/s/1u1efdbBV3HP8FLj3Gy1bvQ) (code: `ipnv`) | `cmumosei_multi_regression_features.pkl` | GraphSmile-format regression feature file; MOCAR converts its labels into seven classes. |
+| CH-SIMS2.0 | [Google Drive](https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/13Ds2_XDIGUqMHt4lXNLQSQ) (code: `icmi`) | `sims2_unaligned_001.pkl` | The official package may provide the unaligned data as `SimsLargeV6.pkl`. Rename it or convert it to the filename and split/feature schema expected by `src/dataloader.py`. |
+
+The IEMOCAP-4 and CMU-MOSEI7 links are published by the [GraphSmile repository](https://github.com/lijfrankopen/GraphSmile). The IEMOCAP-6 and MELD files are preprocessed multimodal features derived from the feature format used by [SDT](https://github.com/butterfliesss/SDT).
+
+### Original Dataset Sources
+
+| Dataset | Official source | Notes |
+|---|---|---|
+| IEMOCAP | [USC SAIL IEMOCAP](https://sail.usc.edu/iemocap/) | Access requires accepting the dataset license/request procedure. |
+| MELD | [MELD website](https://affective-meld.github.io/) and [official repository](https://github.com/declare-lab/MELD) | Contains the original conversational emotion data and documentation. |
+| CMU-MOSEI | [CMU Multimodal SDK](https://github.com/CMU-MultiComp-Lab/CMU-MultimodalSDK) | Provides official dataset access and computational-sequence tools. |
+| CH-SIMS v2.0 | [official repository](https://github.com/thuiar/ch-sims-v2) and [dataset website](https://thuiar.github.io/sims.github.io/chsims) | Use the supervised-data package for the MOCAR binary task. |
+
+Raw audio/video datasets cannot be passed directly to the training scripts. They must first be converted to the pickle schemas expected by `src/dataloader.py`. The links in the first table are therefore recommended when reproducing the released experiments.
+
+### File Placement
 
 Place the files in `data/` using the following names:
 
